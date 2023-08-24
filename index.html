@@ -5,13 +5,14 @@
         <style>
         main{          
             display: flex;
-            background-color: antiquewhite;
+            background-color:black;
             justify-content: center;
             margin: 10rem;
             padding: 2rem;
+            
         }
        .form>h2{
-        color: blue;
+        color: white;
         font-size: 30px;
        }
     label{
@@ -22,6 +23,14 @@
         input{
          margin-bottom: 10px;   
         }   
+        button:hover {
+            background-color: blueviolet;
+            transition: 1s; 
+        }
+        .form{
+        color: antiquewhite; 
+        }
+         
         </style>
     </head>
     <body>
@@ -33,7 +42,7 @@
         <main>
             <!--our coding for today happens here-->
             <div>
-            <form class="form"action>
+            <form action="" class="form">
             <h2>REGISTER HERE</h2>        
                <label for="">first name</label><br> 
                <input type="text" id="first name" name="first name" requried><br>
@@ -42,19 +51,21 @@
             <input type="text" id="last name" name="last name" requried><br>
             
             <label for="email">email</label><br>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email" requried><br>
             
-            <label for="password">password</label><br>
-            <input type="password" id="password" name="password" requried><br>
 
             <label for="phone">phone number</label><br>
             <input type="phone number" id="phone number" name="phone number" requried><br>
-            
-            <input type="submit" value="sign up"><br>
-            <button type="sumbit">log-in</button><br>   
-            
+              
             <label for="date">date of birth</label><br> 
-            <input type="date" id="date" name="date"><br> 
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password" requried><br>
+
+
+            <button type="submit">sign in</button><br>
+    
             </form>
             </div>
         </main>
